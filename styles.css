@@ -1,0 +1,166 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-image: url('background.jpg'); /* 背景圖片的 URL */
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    background-color: rgba(255, 255, 255, 1); /* 白色背景，設置透明度為 0.8 */
+    padding:20px; /* 使用百分比作為內間距 */
+    border-radius: 10px;
+    height: 45%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* 陰影效果 */
+    width: 100%; /* 放大登入介面 */
+    max-width: 460px; /* 設置最大寬度，避免在螢幕非常大的情況下變得過寬 */
+    overflow-y: auto;
+}
+
+.image-container {
+    text-align: left; /* 圖片靠左對齊 */
+
+}
+
+.image-container img {
+    width: 110px; /* 調整圖片大小 */
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px; /* 調整底部邊距 */
+    margin-right: 10px; /* 調整右側邊距 */
+}
+
+.background-logo {
+    position: fixed; /* 固定在畫面上 */
+    top: 60px; /* 距離頂部的距離 */
+    left: 50px; /* 距離左邊的距離 */
+    width: 200px; /* 圖片寬度 */
+    height: 200px; /* 圖片高度 */
+    background-image: url('logo.svg'); /* logo 圖片的 URL */
+    background-size: contain; /* 調整背景圖片大小以適應容器 */
+    background-repeat: no-repeat; /* 禁止圖片重複 */
+    z-index: 9999; /* 確保在最上層 */
+}
+
+.login-box h2 {
+    text-align: left;
+    margin-bottom: 45px;
+    opacity: 0.5;
+    margin-left: 8px;
+    font-size: 1.5rem;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    margin-left: 18px;
+    text-align: left;
+    display: block;
+    margin-bottom: 5px;
+    opacity: 0.9;
+}
+
+.input-group input {
+    width: calc(100% - 40px); /* 減去 padding 的寬度 */
+    padding: 18px 15px; /* 增加上下內間距為 20px，左右內間距為 15px */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+button {
+
+    width: 97%; /* 調整按鈕寬度為 100% */
+    height: 55px; /* 調整按鈕高度為 50px */
+    padding: 10px; /* 增加內間距為 10px */
+    border: none;
+    border-radius: 5px;
+    background-color: #c90303; /* 按鈕背景色 */
+    color: #fff;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 34px;
+
+}
+
+button:hover {
+    background-color: #a80202; /* 滑鼠移過時的按鈕背景色 */
+}
+
+.forgot-password {
+    color: #007bff;
+    text-decoration: none;
+    text-align: left;
+
+}
+
+.register {
+    width: 98.5%; /* 調整按鈕寬度為 100% */
+    height: 55px; /* 調整按鈕高度為 50px */
+    padding: 10px; /* 增加內間距為 10px */
+    border-radius: 5px;
+    background-color: #ffffff; /* 按鈕背景色 */
+    color: #c90303;
+    cursor: pointer;
+    margin-top: 25px;
+    margin-bottom: 8px;
+    border: 1px solid #c90303;
+    font-size: 1rem;
+}
+
+.register:hover {
+    background-color: #a80202; /* 滑鼠移過時的按鈕背景色 */
+    color: #ffffff;
+}
+
+.language-dropdown {
+    margin-top: 20px;
+    position: relative;
+}
+
+
+#language {
+
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: rgba(255, 255, 255, 1); /* 設置透明度為 0.8 */
+    padding: 5px 10px;
+    font-size: 14px; /* 字體大小 */
+    outline: none; /* 去除選擇框的外框 */
+    opacity: 0.7;
+}
+
+.brand {
+    margin-top: 20px;
+    text-align: center;
+    opacity: 0.5;
+    font-size: 13px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 20px; /* 調整內間距 */
+    }
+
+    .login-box {
+        width: 90%; /* 調整登入介面寬度 */
+        max-width: none; /* 移除最大寬度限制 */
+        height: auto; /* 高度自動調整 */
+    }
+
+    .background-logo {
+        top: 20px; /* 調整 logo 位置 */
+        left: 20px; /* 調整 logo 位置 */
+    }
+
+    /* 其他元素的調整 */
+}
